@@ -4,16 +4,20 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <UserSecretsId>fc6ec73d-53e7-4383-8f99-4cc081f21791</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Serilog" Version="4.2.0" />
     <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="8.1.1" />
     <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="8.1.1" />
     <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="8.1.1" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\App.Core\App.Core.csproj" />
     <ProjectReference Include="..\App.ServiceDefaults\App.ServiceDefaults.csproj" />
+    <ProjectReference Include="..\App.Services\App.Services.csproj" />
   </ItemGroup>
 
 </Project>
